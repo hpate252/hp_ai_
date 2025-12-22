@@ -1,0 +1,15 @@
+name = "aipoweredapp"
+main = "worker.js"            
+compatibility_date = "2025-12-21"
+
+[ai]
+binding = "AI"
+
+[durable_objects]
+bindings = [
+  { name = "HP_SESSION", class_name = "HpSession" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["HpSession"]
