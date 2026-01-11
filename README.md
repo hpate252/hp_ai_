@@ -6,7 +6,7 @@ Cloud Flare Assignment
 - Stores per-session plans in a Durable Object (`HpSession`).
 <img width="1198" height="701" alt="image" src="https://github.com/user-attachments/assets/8363a9ce-267c-42dd-9906-0c84de736513" />
 
-# hp_ai_ — Habit Planner on Cloudflare Workers AI
+# hp_ai_ - Habit Planner on Cloudflare Workers AI
 
 hp_ai_ is a tiny focused web app that turns a messy todo list + a bit of context  
 (time, energy, constraints) into a realistic short-term plan using **Cloudflare Workers AI**.
