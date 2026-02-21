@@ -57,7 +57,7 @@ It runs entirely on Cloudflare:
 
 - Model: `@cf/meta/llama-3.3-70b-instruct-fp8-fast`
 - Called via `env.AI.run(...)` with an OpenAI-style `messages` array
-- Uses the system / user prompt pair defined in `createPlan(...)`  
+- Uses the system/user prompt pair defined in `createPlan(...).`  
   (full details in [`PROMPTS.md`](PROMPTS.md))
 
 ---
@@ -80,7 +80,7 @@ aipoweredapp/
   wrangler.toml    # Cloudflare / Wrangler configuration
   PROMPTS.md       # Documentation of system + user prompts
   README.md        # This file
-  package.json     # Dev dependencies (Wrangler etc.)
+  package.json     # Dev dependencies (Wrangler, etc.)
 
 ⚙️ Configuration (wrangler.toml)
 
@@ -160,7 +160,7 @@ Free-form list, one per line. Example:
 
 Finish resume draft
 Clean up inbox
-Study for networking midterm
+Study for the networking midterm
 30 min movement
 
 
@@ -181,7 +181,7 @@ The plan returned by the model is shown as plain text Markdown. It is also store
 
 📡 API endpoints
 
-Although the frontend uses these, you can also call them manually (e.g. with curl or Postman).
+Although the frontend uses these, you can also call them manually (e.g., with curl or Postman).
 
 POST /api/plan
 
