@@ -105,30 +105,16 @@ new_sqlite_classes = ["HpSession"]
 
 🚀 Running locally
 
-**You’ll need:
+**You’ll need: Node.js (LTS) A Cloudflare account npx (comes with Node)**
 
-Node.js (LTS)
-
-A Cloudflare account
-
-npx (comes with Node)**
-
-1. Install dependencies
-**npm install**
+1. Install dependencies **npm install**
 
 2. Dev server (using real Cloudflare infrastructure)
 
-Durable Objects + Workers AI work best with remote dev:
-
-**npx wrangler dev --remote**
+Durable Objects + Workers AI work best with remote dev: **npx wrangler dev --remote**
 
 
-This will:
-
-Build the Worker
-
-**Run it on Cloudflare’s edge
-**
+This will: Build the Worker **Run it on Cloudflare’s edge**
 Give you a local URL to open in the browser
 
 🌍 Deploying to Cloudflare
@@ -137,10 +123,7 @@ Once everything looks good:
 
 **npx wrangler deploy**
 
-
-This:
-
-Applies the migration to create the HpSession Durable Object class (if not already created)
+This: Applies the migration to create the HpSession Durable Object class (if not already created)
 
 Deploys the Worker code
 
