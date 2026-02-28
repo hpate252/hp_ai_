@@ -2,7 +2,6 @@
 
 const MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast";
 
-// Durable Object: one instance per browser/session ID
 export class HpSession {
   constructor(state, env) {
     this.state = state;
@@ -107,14 +106,12 @@ export class HpSession {
       contextText,
     };
 
-    // Persist last plan for this session
     await this.state.storage.put("last-plan", record);
 
     return record;
   }
 }
 
-// Small HTML + JS UI, all inline
 function renderHtmlPage() {
   return `<!doctype html>
 <html lang="en">
@@ -422,7 +419,6 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // UI
     if (url.pathname === "/") {
       return new Response(renderHtmlPage(), {
         headers: { "Content-Type": "text/html; charset=utf-8" },
